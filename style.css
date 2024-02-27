@@ -92,7 +92,7 @@ main {
 
 #javifoto {
     max-width: 35%;
-    border-radius: 8px;
+    border-radius: 10px;
     filter:saturate(70%);
     z-index: -1;
 }
