@@ -1,64 +1,133 @@
-.fondocuerpo{
-    background-color: rgb(29, 0, 44);
-    margin: 0px;
-    padding: 95px;
-    display: block;
-    position: relative;
+@media (prefers-reduced-motion: no-preference) {
+    * {
+    scroll-behavior: smooth;
+    }
 }
 
-.cabecera {
-    background-color: rgb(0, 143, 45);
-    width: auto;
-    min-width: auto;
-    text-align: right;
-    padding-top: 50px;
-    padding-right: 10px; 
-    border-radius: 8px  ;  
-}
-h1 {
-    margin: 0px;
-    font-size: 42px;
+body{
+    background: rgb(0, 0, 0);
+    font-family: Helvetica;
+    font-size: 1.0rem;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display:flex;
 }
 
-.panelizquierdo {
-    background-color: rgb(5, 43, 14);
-    width: 16%;
-    min-width: 80px;
-    border-radius: 8%;
-    float: left;
-    padding: 4px;
-    margin-top: 5px;
-    margin-right: 20px;
-    margin-bottom: 100%;
-    text-align: right;
-    vertical-align: middle;
-}
-
-.botonesmenu{
+body::before {
+    background-image: url("/img/sandstone.jpg");
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    border: none;
-    background-color: rgb(12, 83, 30);
-    color: white;
-    font-size: 18px;
-    text-align: right;
-    cursor: pointer;
-    transition-duration: 0.4s;
-    margin-bottom: 4px;
-    margin-top: 4px;
-    border-radius: 6px;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    opacity: 0.3;
+    z-index: -1; /* Coloca la imagen detrás de otros elementos */
+}
+
+.header {
+    background-color: rgb(206, 206, 206);
+    width: 100%;
+    height: 75px;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    align-items: flex-end;
+    top: 0;
+}
+
+nav > ul {
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+    padding-right: 12px;
+}
+
+nav > ul > li {
+    color: #2c7d3f;
+    text-decoration:solid;
+    margin: 0 0.2rem;
+    padding: 0.5rem;
     display: block;
+
 }
 
-.botoneshover:hover {
-    background-color: rgb(220, 220, 0);
-    color: blueviolet;
+nav > ul > li:hover {
+    background-color: #2ca047;
+    color: rgb(206, 206, 206);
+    cursor: pointer;
+    border-radius: 8px;
 }
 
-.inicioPanel{
-    padding: 0px;
-    width: auto;
-    display: i;
+li > a {
+    color: inherit;
+    text-decoration: none;
 }
-h3 {
-    color: white;
+
+main {
+    max-width: 100%;
+    margin: 120px 12% 12% 12%;
+}
+
+#javifoto {
+    max-width: 35%;
+    border-radius: 8px;
+    filter:saturate(70%);
+    z-index: -1;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.text-inicio {
+    flex: 1;
+    padding-right: 40px;
+    align-self: flex-start;
+    text-align: right;
+
+    line-height: 1.7;
+    font-size: 1.3rem;
+}
+
+#resaltado-verde {
+    color: #2ca047;
+}
+
+.separador {
+    margin: 70px 0 70px 0;
+}
+
+.trayectoria-left {
+    width: 50%;
+    border-right: 3px solid #00be23;
+    height: 200px;
+    box-sizing: border-box;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.trayectoria-right {
+    width: 50%;
+    padding-left: 20px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.contenedor-trayectoria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }

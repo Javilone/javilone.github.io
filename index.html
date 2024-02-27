@@ -2,24 +2,60 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <!-- Esto hace que la web se vea igual en todos los dispositivos-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <link rel="stylesheet" href="style.css"> <!-- Esto enlaza el archivo CSS -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Esto hace que la web se vea igual en todos los dispositivos-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="/img/icon.ico" type="image/x-icon">
+        <meta name="description" content="Personal portfolio Javier Lopez Lara desarrollo de software fullstack" />
+        <title>Javier Lopez Lara - Portfolio</title>
     </head>
-    <body class="fondocuerpo">
-        <div class="cuerpo">
-            <div class="cabecera">
-                <h1>JAVIER LOPEZ LARA</h1>
-            </div>
-            <div class="panelizquierdo">
-                <button class="botonesmenu botoneshover" type="button">Inicio. Sobre mi.</button>
-                <button class="botonesmenu botoneshover" type="button">CV</button>
-                <button class="botonesmenu botoneshover" type="button">Portfolio</button>
-                <button class="botonesmenu botoneshover" type="button">Contacto</button>
-            </div>
-            <div class="inicioPanel">
-                <h3> Holiiiii aqui irá todo el contenido!?Holiiiii aqui irá todo el contenido!?Holiiiii aqui irá todo el contenido!?Holiiiii aqui irá todo el contenido!?Holiiiii aqui irá todo el contenido!?</h3>
-            </div>
-        </div>
+    <body> <!-- Contenido global -->
+        <header> <!-- Cabecera -->
+            <section = id="inicio" role="region" aria-labelledby="inicio">
+                <div class="header">
+                    <!-- TODO: Insertar una imagen. -->
+                    <nav>
+                        <ul>
+                            <li><a href="#inicio">INICIO</a></li>
+                            <li><a href="#trayectoria">TRAYECTORIA</a></li>
+                            <li><a href="#portfolio">PORTFOLIO</a></li>
+                            <li><a href="#blog">BLOG</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        </header>
+        <main> <!-- Contenido general propio -->
+            <section class="content">
+                <div class="text-inicio">
+                    <h1><span id="resaltado-verde">¡Hola!</span> Soy Javier López L.</h1>
+                    <h4><span id="resaltado-verde">Programador fullstack en ciernes.</span></h4>
+                    <p>Bienvenido a mi web. (🚧 ¡En construcción! 🚧) .</p>
+                    <p>Recién graduado en Desarrollo de Aplicaciones Multiplataforma.</p>
+                    <p>Con <span id="resaltado-verde">conocimientos</span> de programación, <span id="resaltado-verde">Python</span>, <span id="resaltado-verde">SQL</span>, <span id="resaltado-verde">HTML</span>, <span id="resaltado-verde">CSS</span>. Comprometido con mi desarrollo profesional, continuo aprendiendo de forma autodidacta, buscando oportunidades para aplicar y mejorar mis habilidades mientras busco un crecimiento continuo en mi carrera.</p>
+                </div>
+                <img id="javifoto" src="/img/javierll.jpeg" />
+            </section>
+            <hr class="separador"></hr>
+            <section id="trayectoria" class="content" role="region" aria-labelledby="trayectoria">
+                <div class="contenedor-trayectoria">
+                <div class="trayectoria-left">
+                    <p> TEXTO DE PRUEBAS AQUI</p>
+
+                </div>
+                <div class="trayectoria-right">
+                    <p> TEXTO DE PRUEBAS AQUI</p>
+
+                </div>
+                <div class="trayectoria-left">
+                    <p> TEXTO DE PRUEBAS AQUI</p>
+
+                </div>
+                </div>
+            </section>
+        </main>
+        <footer> <!-- Pie de página -->
+            
+        </footer>
     </body>
+    
 </html>
