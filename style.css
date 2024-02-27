@@ -27,7 +27,7 @@ body::before {
     background-position: center center;
     background-repeat: no-repeat;
     filter: grayscale(100%);
-    opacity: 0.3;
+    opacity: 0.2;
     z-index: -1; /* Coloca la imagen detrás de otros elementos */
 }
 
@@ -86,10 +86,6 @@ main {
     width: 100%;
 }
 
-#texto-bienvenida {
-    font-size: 1.3vw;
-}
-
 #javifoto {
     max-width: 35%;
     border-radius: 10px;
@@ -108,7 +104,11 @@ main {
     align-self: flex-start;
     text-align: right;
     line-height: 1.7;
-    font-size: 1.3rem;
+    /*font-size: 1.6vw;*/
+}
+
+#texto-bienvenida {
+    /*font-size: 1.6vw;*/
 }
 
 #resaltado-verde {
