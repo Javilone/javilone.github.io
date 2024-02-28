@@ -76,7 +76,54 @@
                 <div class="titulo-seccion">
                     <h2><span id="resaltado-verde">Portfolio</span></h2>
                 </div>
+                <div class="contenedor-portfolio">
+                    <div>
+                        <img class="imagen-portfolio" src="/img/basicloginmedac.png" alt="Basic login Medac" >
+                        <p id="titulo-de-foto"><span id="resaltado-verde">Login Medaclinic.</p>
+                        <p id="pie-de-foto">PHP, SQL, C#, AWS, Unity.</p>
+                        <p id="pie-de-foto">Implementación de funcionalidades para simulador de clínica de higiene bucodental en Unity, usando <span id="resaltado-verde">C#, AWS (RDS y EC2), PHP y SQL</span> para la creación de un sistema de login, animaciones y efectos.<br> Trabajando de forma colaborativa con múltiples equipos involucrados en el desarrollo. <br>Haciendo uso de herramientas de control de versiones como <span id="resaltado-verde">GitHub</span> y Plastic (Unity).</p>
+                    </div>
+                    <div>
+                        <img class="imagen-portfolio" src="/img/tuercas.jpg" alt="Basic login Medac" >
+                        <p id="titulo-de-foto"><span id="resaltado-verde">Cosas que están por venir 🙂</p>
+                        <p id="pie-de-foto">¡La maquinaria no se para!</p>
+                    </div>
+                </div>
             </section>
+            <hr class="separador content" id="contacto" role="region" aria-labelledby="contacto"></hr>
+            <section> <!-- CONTACTO -->
+                <div class="titulo-seccion">
+                    <h2><span id="resaltado-verde">Contacto</span></h2>
+                </div>
+                <div class="contenedor-contacto">
+                    <div class="email-contacto">
+                        <a href="mailto:lopez.lara.javier@gmail.com"><img class="email-simbolo" src="/img/mail.png" alt="email" ></a>
+                        <a href="mailto:lopez.lara.javier@gmail.com"><p id="titulo-de-foto">Hablemos.</p></a>
+                    </div>
+                    <div class="email-contacto">
+                        <button class="boton-email" onclick="copiarEmail()">¡Cópiame!</button>
+                        <p id="texto-a-copiar">lopez.lara.javier@gmail.com</p>
+
+                        <script>
+                            function copiarEmail() {
+                            
+                            var texto = document.getElementById("texto-a-copiar");
+                            var areaDeTexto = document.createElement("textarea");
+
+                            areaDeTexto.value = texto.innerText;
+
+                            document.body.appendChild(areaDeTexto);
+
+                            areaDeTexto.select();
+                            
+                            document.execCommand('copy');
+
+                            document.body.removeChild(areaDeTexto);
+
+                            alert("¡Email copiado al portapapeles!");
+                            }
+                        </script>
+                </div>
         </main>
         <footer> <!-- Pie de página -->
 
