@@ -221,7 +221,7 @@ h3 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 80px;
+    margin: 80px 80px 0 0;
     width: 100%;
 }
 
@@ -231,7 +231,7 @@ h3 {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0 80px 80px 0;
+    margin: 0 80px 80px 80px;
 }
 
 .email-contacto > a {
@@ -244,12 +244,18 @@ h3 {
     text-decoration: none;
 }
 
+#texto-a-copiar #hablemos{
+    margin: 0px 80px 0 0;
+    font-size: 1.2em;
+}
+
+
 .email-simbolo {
     width: 80px;
     height: 80px;
     border: 2px solid white;
     border-radius: 50%;
-    margin: 0 15px 0 0;
+    margin: 0 15px 0 80px;
     background-color: white;
     object-fit:scale-down;
 }
@@ -257,7 +263,7 @@ h3 {
 .email-simbolo:hover {
     border: 2px solid #2c7d3f;
     border-radius: 50%;
-    margin: 0 15px 0 0;
+    margin: 0 15px 0 80px;
 }
 
 .boton-email {
@@ -275,19 +281,13 @@ h3 {
 }
 
 /* FOOTER */
-#footer {
-    margin: 0px 10% 0px 10%;
-    border-color: white;
-    box-shadow: 0px -2px 8px 3px white;
-}
-
 .footer-contenedor {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     width: 80%;
     height: auto;
-    margin: 0 10% 0 10%;
+    margin: -100px 10% 0 10%;
     border-radius: 10px 10px 0px 0px;
     background-color: white;
     color: black;
@@ -301,6 +301,12 @@ h3 {
 .texto-footer {
     font-size: 0.8em;
     text-align: center;
+}
+
+#footer {
+    margin: 0px 10% 0px 10%;
+    border-color: white;
+    box-shadow: 0px -2px 8px 3px white;
 }
 
 
