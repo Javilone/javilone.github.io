@@ -183,6 +183,20 @@ h3 {
     color:#00be23;
 }
 
+.enlaceCV {
+    color:white;
+    text-align: center;
+    margin: 15px 0 20px 0;
+    width: 100%;
+    text-decoration: none;
+
+}
+
+.enlaceCV:hover {
+    text-decoration: none;
+    color: #2ca047;
+}
+
 /* PORTFOLIO */
 .contenedor-portfolio {
     display: flex;
@@ -213,6 +227,15 @@ h3 {
     margin: -1em 0 2.5em 0;
     max-width: 300px;
     text-align: left;
+}
+
+#pie-de-foto > a {
+    text-decoration: none;
+    color:#2ca047;
+}
+#pie-de-foto > a:hover {
+    text-decoration: none;
+    color:white;
 }
 
 /* CONTACTO */
