@@ -22,7 +22,7 @@
                             <li><a href="#cv">CV</a></li>
                             <li><a href="#portfolio">PORTFOLIO</a></li>
                             <li><a href="#contacto">CONTACTO</a></li>
-                            <li><a href="#sobremi">SOBRE MI</a></li>
+                            <li><a href="#sobremi">SOBRE MÍ</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -33,13 +33,16 @@
                 <div class="text-inicio">
                     <h1><span id="resaltado-verde">¡Hola!</span> Soy Javier López L.</h1>
                     <h3><span id="resaltado-verde">Programador fullstack en ciernes.</span></h3>
-                    <p>Bienvenido a mi web. (🚧 ¡En construcción! 🚧) .</p>
+                    <p>¡Bienvenido a mi web!</p>
                     <p>Con <span id="resaltado-verde">conocimientos</span> de programación, <span id="resaltado-verde">Python</span>, <span id="resaltado-verde">SQL</span>, <span id="resaltado-verde">HTML</span>, <span id="resaltado-verde">CSS</span>. Comprometido con mi desarrollo, tras acabar los estudios profesionales, continuo aprendiendo de forma autodidacta, buscando oportunidades para aplicar y mejorar mis habilidades mientras busco un crecimiento continuo en mi carrera.</p>
                 </div>
                 <img id="javifoto" src="/img/javierll.jpeg" />
             </section>
             <hr class="separador content" id="cv" role="region" aria-labelledby="cv"></hr>
             <section>   <!-- CV -->
+                <div class="enlaceCV">
+                    <a class="enlaceCV" href="https://github.com/Javilone/javilone.github.io/blob/main/docs/CVJavierLopezLara.pdf" target="_blank"><h2>Ver CV (pdf) desde Github</h2></a>
+                </div>
                 <div class="titulo-seccion">
                     <h2><span id="resaltado-verde">Formación reglada</span></h2>
                 </div>
@@ -55,7 +58,7 @@
                         <p>UNED</p>
                     </div>
                 <div class="titulo-seccion">
-                    <h2><span id="resaltado-verde">Otros</span></h2>
+                    <h2><span id="resaltado-verde">Cursos y certificados</span></h2>
                 </div>
                     <div class="trayectoria-left">
                         <p>2023 - 2024</p>
@@ -69,8 +72,29 @@
                         <p>OpenWebinars</p>
                         <p><a href="https://openwebinars.net/cert/ml1r">Credencial</a></p>
                     </div>
-                    <div class="enlaceCV">
-                        <a class="enlaceCV" href="https://github.com/Javilone/javilone.github.io/blob/main/docs/CVJavierLopezLara.pdf" target="_blank"><h2>Ver CV (pdf) desde Github</h2></a>
+                    <div class="titulo-seccion">
+                        <h2><span id="resaltado-verde">Experiencia laboral</span></h2>
+                    </div>
+                    <div class="trayectoria-left">
+                        <p>10/2023 - 01/2024</p>
+                        <p>Desarrollador de software</p>
+                        <p>Fundación MEDAC</p>
+                    </div>
+                    <div class="trayectoria-right">
+                        <p><br><br><br>06/2016 - Actualmente</p>
+                        <p>Sales Advisor</p>
+                        <p>H&M</p>
+                    </div>
+                    <div class="titulo-seccion">
+                        <h2><span id="resaltado-verde">Habilidades</span></h2>
+                    </div>
+                    <div class="trayectoria-left">
+                        <p id="resaltado-verde">Habilidades técnicas</p>
+                        <p>Python<br>SQL<br>HTML<br>CSS<br>Github</p>
+                    </div>
+                    <div class="trayectoria-right">
+                        <p id="resaltado-verde"><br><br><br>Habilidades blandas</p>
+                        <p>Adaptabilidad<br>Comunicación efectiva<br>Empatía<br>Gestión de tiempo<br>Pensamiento crítico<br>Resolución de problemas<br>Trabajo en equipo<br>Visión global</p>
                     </div>
                 </div>
             </section>
@@ -105,9 +129,14 @@
                         <a href="mailto:lopez.lara.javier@gmail.com"><p id="hablemos">Hablemos.</p></a>
                     </div>
                     <div class="email-contacto">
+                        <a href="https://www.linkedin.com/in/javier-lopez-lara/" target="_blank"><img class="email-simbolo" src="/img/linkedin.png" alt="linkedin" ></a>
+                    </div>
+                    <div class="email-contacto">
+                        <a href="https://github.com/Javilone" target="_blank"><img class="email-simbolo" src="/img/githubicon.png" alt="github" ></a>
+                    </div>
+                    <div class="email-contacto">
                         <button class="boton-email" onclick="copiarEmail()">¡Cópiame!</button>
                         <p id="texto-a-copiar">lopez.lara.javier@gmail.com</p>
-
                         <script>
                             function copiarEmail() {
                             
@@ -128,18 +157,31 @@
                             }
                         </script>
                     </div>
-                    <div class="email-contacto">
-                        <a href="https://www.linkedin.com/in/javier-lopez-lara/" target="_blank"><img class="email-simbolo" src="/img/linkedin.png" alt="linkedin" ></a>
+                </div>
+            <hr class="separador content" id="sobremi" role="region" aria-labelledby="sobremi"></hr>
+            <section> <!-- SOBRE MI -->
+                <div class="titulo-seccion">
+                    <h2><span id="resaltado-verde">Sobre mí</span></h2>
+                </div>
+                <div class="contenedor-sobremi">
+                    <div class="sobremi">
+                        <img id="foto-contacto" src="/img/mifoto.jpeg" alt="Foto sobre mi" >
                     </div>
-                    <div class="email-contacto">
-                        <a href="https://github.com/Javilone" target="_blank"><img class="email-simbolo" src="/img/githubicon.png" alt="github" ></a>
+                    <div class="texto-sobremi">
+                        <p>Ahora que ya has visto mi perfil, es el momento de saber un poco más <span id="resaltado-verde">sobre mí.</span></p>
+                        <p>Tengo 37 años, <span id="resaltado-verde">nacido en Sevilla</span>, aunque llevo viviendo más de 9 años en <span id="resaltado-verde">Madrid</span> por circunstancias de la vida.</p>
+                        <p>Las dificultades personales estuvieron presentes en estos años, por supuesto. Así que la <span id="resaltado-verde">fuerza</span> por salir adelante, solo y en una ciudad diferente me llevó a <span id="resaltado-verde">trabajar</span> cara al público durante estos años.</p>
+                        <p><span id="resaltado-verde">Agradecido</span> con lo aprendido en mi actual trabajo en H&M, es mi <span id="resaltado-verde">deseo más profundo</span> el cambiar a una profesión que siempre me ha atraído y que tan presente he tenido siempre en el hogar.</p>
+                        <p>Para lograr mis <span id="resaltado-verde">objetivos</span> y tras acabar el Grado Superior DAM, <span id="resaltado-verde">aprendo practicando</span> con freeCodeCamp y OpenWebinars sobre frontend, backend y cloud computing.</p>
+                        <p>Ya que este viaje no afloja el <span id="resaltado-verde">ritmo</span> ni un instante, este mes de mayo de 2024 tengo previsto participar en la piscina de <span id="resaltado-verde">42Madrid</span> donde lo voy a dar <span id="resaltado-verde">todo.</span></p>
+                        <p>Un <span id="resaltado-verde">curioso</span> de la tecnología, de los avances, y un fan acérrimo de los videojuegos<br>En mi tiempo libre disfruto aprendiendo y practicando con la programación, con la cual empecé hace más de dos años, y de algunas partidas a la consola.</p>
                     </div>
                 </div>
         </main>
         <footer> <!-- Pie de página -->
 
             <div class="footer-contenedor">
-                <p class="texto-footer">Hecho con cariño por <span id="resaltado-verde">Javier López Lara.</span><br>En febrero de 2024<br></p>
+                <p class="texto-footer">Hecho con cariño por <span id="resaltado-verde">Javier López Lara.</span><br>En febrero de 2024<br><span style="font-style: italic;">"Este viaje solo acaba de comenzar"</span></p>
             </div>
             <hr id="footer"></hr>
         </footer>

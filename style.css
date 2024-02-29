@@ -101,7 +101,7 @@ main {
 
 .text-inicio {
     flex: 1;
-    padding: 0px 20px 0px 5px;
+    padding: 0px 20px 0px 20px;
     margin: 0px 40px 40px 5px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 10%);
@@ -268,7 +268,7 @@ h3 {
 }
 
 #texto-a-copiar #hablemos{
-    margin: 0px 80px 0 0;
+    margin: 0px 0px 0 0;
     font-size: 1.2em;
 }
 
@@ -301,6 +301,35 @@ h3 {
 .boton-email:hover {
     background-color: #2ca047;
     cursor: pointer;
+}
+
+/* SOBRE MI */
+.contenedor-sobremi {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-top: 80px;
+    width: 100%;
+}
+
+#foto-contacto {
+    margin: 0 20px 130px 0;
+    width: 300px;
+    border: 3px solid #2c7d3f;
+    border-radius: 10px;
+}
+
+.texto-sobremi {
+    flex: 1;
+    margin: 0 0 0 20px;
+    background-color: rgba(255, 255, 255, 10%);
+    padding: 0px 20px 5px 20px;
+    border-radius: 10px;
+    align-self: flex-start;
+    text-align: left;
+    line-height: 1.7;
+    font-size: 0.85em;
 }
 
 /* FOOTER */
@@ -389,12 +418,52 @@ h3 {
         padding: 0 0 0 0;
     }
     /* CONTACTO */
-    .email-contacto {
+    .contenedor-contacto {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .email-contacto {
+        justify-content: center;
+        margin: -40px -20px 80px 0;
+    }
+
+    .email-simbolo {
+        width: 50px;
+        height: 50px;
+        margin-left: 90px;
+    }
+
+    .boton-email {
+        width: 120px;
+        height: 28px;
+        margin-left: 90px;
+    }
+
+    #texto-a-copiar {
+        margin-left: 60px;
+    }
+
+    /* SOBRE MI */
+    .contenedor-sobremi {
+        flex-direction: column;
         align-items: center;
-        margin: 0 0px 80px 0;
+    }
+
+    #foto-contacto {
+        margin: 0 0px 0px 0;
+        max-width: 200px;
+        z-index: -1;
+    }
+
+    .texto-sobremi {
+        margin: 10px 0 130px 0px;
+        padding: 0px 10px 0px 10px;
+        align-self: center;
+        line-height: 1.7;
+        font-size: 0.85em;
     }
 }
