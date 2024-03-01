@@ -364,6 +364,11 @@ h3 {
 
 /* AJUSTES PANTALLA MOVIL */
 @media screen and (max-width: 600px) {
+    /* MENU HEADER */
+nav > ul {
+    font-size: 1.1rem;
+}
+    
     /* HEADER */
     .header{
         width: 90%;
@@ -434,13 +439,13 @@ h3 {
     .email-simbolo {
         width: 50px;
         height: 50px;
-        margin-left: 90px;
+        margin-left: 70px;
     }
 
     .boton-email {
         width: 120px;
         height: 28px;
-        margin-left: 90px;
+        margin-left: 70px;
     }
 
     #texto-a-copiar {
@@ -465,5 +470,9 @@ h3 {
         align-self: center;
         line-height: 1.7;
         font-size: 0.85em;
+    }
+
+    .texto-footer {
+        font-size: 0.7em;
     }
 }
