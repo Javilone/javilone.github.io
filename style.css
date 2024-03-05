@@ -1,3 +1,12 @@
+:root{
+--resaltado-verde: #2ca047;
+--header-background: rgba(239, 239, 239, 85%);
+--header-link-over: #36c758;
+--verde-secundario: #2c7d3f;
+--background-text: rgba(255, 255, 255, 10%);
+--cv-separator: #00be23;
+}
+
 @media (prefers-reduced-motion: no-preference) {
     * {
     scroll-behavior: smooth;
@@ -31,7 +40,7 @@ body::before {
 
 /* HEADER */
 .header {
-    background-color: rgb(239, 239, 239);
+    background-color: var(--header-background);
     width: 80%;
     height: auto;
     min-height: 8%;
@@ -43,12 +52,18 @@ body::before {
     justify-content: center;
     align-items: flex-end;
     border-radius: 0px 0px 10px 10px;
-    box-shadow: 0 0 8px 5px #2c7d3f;
+    box-shadow: 0 0 8px 5px var(--verde-secundario);
     filter: opacity(80%);
+    transition: 1s all ease-in;
 }
 
 .header > *:not(nav){
     opacity: 0.75;
+}
+
+.header:hover{
+    background-color: white;
+    transition: 1s all ease-out;
 }
 
 /* MENU HEADER */
@@ -63,15 +78,15 @@ nav > ul {
 }
 
 nav > ul > li {
-    color: #2c7d3f;
+    color: var(--verde-secundario);
     margin: 0 0.2rem;
     padding: 0.5rem;
     display: block;
 }
 
 nav > ul > li:hover {
-    background-color: #36c758;
-    color: rgb(255, 255, 255);
+    background-color: var(--header-link-over);
+    color: white;
     cursor: pointer;
     border-radius: 8px;
 }
@@ -104,7 +119,7 @@ main {
     padding: 0px 20px 0px 20px;
     margin: 0px 40px 40px 5px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 10%);
+    background-color: var(--background-text);
     align-self: flex-start;
     text-align: right;
     line-height: 1.7;
@@ -122,12 +137,12 @@ h3 {
 }
 
 #resaltado-verde {
-    color: #2ca047;
+    color: var(--resaltado-verde);
 }
 
 #javifoto {
     max-width: 35%;
-    border: 3px solid #2c7d3f;
+    border: 3px solid var(--verde-secundario);
     border-radius: 10px;
     /* box-shadow: 0 0 8px 2px white; */
     filter:saturate(70%);
@@ -148,7 +163,7 @@ h3 {
 }
 
 .titulo-seccion > h2 {
-    background-color: rgba(255, 255, 255, 10%);
+    background-color: var(--background-text);
     border-radius: 10px;
 
 }
@@ -163,7 +178,7 @@ h3 {
 
 .trayectoria-left {
     width: 50%;
-    border-right: 3px solid #00be23;
+    border-right: 3px solid var(--cv-separator);
     height: 200px;
     box-sizing: border-box;
     text-align: right;
@@ -180,7 +195,7 @@ h3 {
 
 .trayectoria-left > p > a, .trayectoria-right > p > a {
     text-decoration: none;
-    color:#00be23;
+    color:var(--cv-separator);
 }
 
 .enlaceCV {
@@ -194,7 +209,7 @@ h3 {
 
 .enlaceCV:hover {
     text-decoration: none;
-    color: #2ca047;
+    color: var(--resaltado-verde);
 }
 
 /* PORTFOLIO */
@@ -211,11 +226,24 @@ h3 {
     padding: 0 40px 0 0;
 }
 
+.contenedor-portfolio > div > a{
+    text-decoration: none;
+    color: var(--verde-secundario);
+}
+
 .imagen-portfolio {
     width: 300px;
     height: 300px;
-    border: 3px solid #2c7d3f;
+    border: 3px solid var(--verde-secundario);
     border-radius: 10px;
+    transition: all 1s ease-in;
+}
+
+.imagen-portfolio:hover {
+    width: 320px;
+    height: 320px;
+    border: 3px solid var(--header-background);
+    transition: all 1s ease-out;
 }
 
 #titulo-de-foto {
@@ -231,7 +259,7 @@ h3 {
 
 #pie-de-foto > a {
     text-decoration: none;
-    color:#2ca047;
+    color: var(--resaltado-verde);
 }
 #pie-de-foto > a:hover {
     text-decoration: none;
@@ -254,7 +282,7 @@ h3 {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0 80px 80px 80px;
+    margin: 0 90px 80px 50px;
 }
 
 .email-contacto > a {
@@ -263,8 +291,12 @@ h3 {
 }
 
 .email-contacto > a:hover {
-    color: #2c7d3f;
+    color: var(--verde-secundario);
     text-decoration: none;
+}
+
+#hablemos {
+    margin: 0 -200px 0 0 ;
 }
 
 #texto-a-copiar #hablemos{
@@ -272,35 +304,43 @@ h3 {
     font-size: 1.2em;
 }
 
-
 .email-simbolo {
-    width: 80px;
-    height: 80px;
+    width: 55px;
+    height: 55px;
     border: 2px solid white;
     border-radius: 50%;
     margin: 0 15px 0 80px;
     background-color: white;
     object-fit:scale-down;
+    transition: 0.5s all ease-in;
 }
 
 .email-simbolo:hover {
-    border: 2px solid #2c7d3f;
+    border: 2px solid var(--verde-secundario);
     border-radius: 50%;
     margin: 0 15px 0 80px;
+    width: 66px;
+    height: 66px;
+    transition: 0.5s all ease-out;
+    
 }
 
 .boton-email {
     border-radius: 10px;
-    border: 3px solid #2ca047;
-    background-color: rgb(239, 239, 239);
+    border: 3px solid var(--resaltado-verde);
+    background-color: var(--header-background);
     width: 140px;
     height: 35px;
     margin: 0 15px 0 0;
+    transition: 0.5s all ease-in;
 }
 
 .boton-email:hover {
     background-color: #2ca047;
     cursor: pointer;
+    width: 152px;
+    height: 40px;
+    transition: 0.5s all ease-out;
 }
 
 /* SOBRE MI */
@@ -316,14 +356,14 @@ h3 {
 #foto-contacto {
     margin: 0 20px 130px 0;
     width: 300px;
-    border: 3px solid #2c7d3f;
+    border: 3px solid var(--verde-secundario);
     border-radius: 10px;
 }
 
 .texto-sobremi {
     flex: 1;
     margin: 0 0 0 20px;
-    background-color: rgba(255, 255, 255, 10%);
+    background-color: var(--background-text);
     padding: 0px 20px 5px 20px;
     border-radius: 10px;
     align-self: flex-start;
@@ -372,6 +412,7 @@ nav > ul {
     /* HEADER */
     .header{
         width: 90%;
+        background-color: white;
     }
 
     #inicio {
@@ -442,10 +483,21 @@ nav > ul {
         margin-left: 70px;
     }
 
+    .email-simbolo:hover{
+        width: 50px;
+        height: 50px;
+        margin-left: 70px;
+    }
+
+
     .boton-email {
         width: 120px;
         height: 28px;
         margin-left: 70px;
+    }
+
+    #hablemos {
+        color: transparent;
     }
 
     #texto-a-copiar {
