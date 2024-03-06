@@ -1,0 +1,153 @@
+:root{
+    --backgroundcolor: linear-gradient(120deg, rgb(0, 166, 75), rgb(130, 246, 184));
+    --form_background: rgb(32, 73, 51);
+}
+
+html {
+    font-family: Arial;
+    font-size: 1rem;
+    padding: 65px 45px 0 45px;
+    background: black;
+}
+
+body {
+    box-shadow: 0 0 20px 4px chartreuse;
+    background: var(--form_background);
+    border-radius: 10px;
+    margin: 0 20% 0 20%;
+    align-items: center;
+
+}
+
+#title {
+    text-align: center;
+    font-size: 2.3rem;
+    background: var(--backgroundcolor);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 15px 0 5px 0;
+}
+
+#description {
+    background: var(--backgroundcolor);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 5px 0 15px 0;
+    margin-top: -30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 1.15rem;
+    text-align: center;
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 10px;
+    padding: 40px 40px 40px 40px;
+    color: white;
+    font-size: 1.2rem;
+    z-index: -1;
+}
+
+#survey-form label {
+    padding-bottom: 20px;
+}
+
+#name, #email, #number {
+    width: 100%;
+    height: 30px;
+    font-size: 1rem;
+    background-color: rgb(78, 78, 78);
+    color:rgb(174, 251, 210);
+    cursor:text;
+    border-radius: 3px;   
+    padding: 5px;
+    border: 0px;
+}
+
+::placeholder{
+    color:rgb(162, 161, 161)
+}
+
+#name:focus, #email:focus, #number:focus, .textarea:focus{
+    border: 3px solid rgb(86, 171, 0);
+}
+
+#dropdown {
+    width: 100%;
+    height: 30px;
+    font-size: 1.1rem;
+    border: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 20px 1px chartreuse;
+    border-radius: 3px;
+    background-color: rgb(224, 224, 224);
+}
+.radiobotones {
+    margin-top: 20px;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 13px;
+    height: 13px;
+    box-shadow: 0 0 20px 1px chartreuse;
+    background-color: rgb(224, 224, 224);
+}
+input[type=checkbox] {
+    border: 3px;
+    width: 13px;
+    height: 13px;
+    box-shadow: 0 0 20px 1px chartreuse;
+    background-color: rgb(224, 224, 224);
+}
+
+#radios {
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+#radios > label {
+    margin-left: 10px;
+}
+
+.opciones {
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+#casillas {
+    margin-left: 20px;
+    margin-bottom: -10px;
+}
+
+.textarea {
+    margin-top: 25px;
+    width: 100%;
+    min-height: 100px;
+    font-size: 1rem;
+    border: none;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: rgb(78, 78, 78);
+    color:rgb(174, 251, 210);
+}
+
+#submit{
+    height: 30px;
+    box-shadow: 0 0 20px 1px chartreuse;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 950px){
+    html {
+        font-size: 0.8rem;
+    }
+    body{
+        margin: 0 5% 0 5%;
+    }
+}

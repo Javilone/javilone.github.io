@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="product-landing-page" content="A product landing page made during freeCodeCamp certification" />
+        <link rel="stylesheet" href="landingstyles.css">
+        <title>Product landing page</title>
+    </head>
+    <body>
+        <header id="header">
+            <nav id="nav-bar">            
+                <a href="#story" class="nav-link">STORY</a>
+                <a href="#features" class="nav-link">TRAILER</a>
+                <a href="#newsletter" class="nav-link">NEWSLETTER</a>
+            </nav>
+            <img id="header-img" src="./Logo_Final_Fantasy_VIII.jpg"/>
+        </header>
+        <hr class="separator" id="story"></hr>
+        <section>
+            <div class="story-bg"><p class="story-text">In a world where an ancient energy known as the Sorceress Power is passed down through generations, the peace of the realm is threatened when the evil Sorceress Edea takes power as ruler of the Galbadia Republic. <br><br>Squall, a member of Balamb Garden Military Academy's elite mercenary force SeeD, other allies from the Garden, and Rinoa, a member of the resistance, join together on a journey to fight against Sorceress Edea, who shows hostility toward the Garden.</p></div>
+        </section>
+
+        <hr class="separator" id="features"></hr>
+        <div class="features-bg">
+            <iframe id="videoyt"width="560" height="315" src="https://www.youtube.com/embed/MtMGzG_91fY?si=b-codeOvM_qHKJVW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h2 id="platforms">AVAILABLE ON ALL PLATFORMS</h2>
+        </div>
+        <hr class="separator" id="newsletter"></hr>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <h2 class="subscribe">SUBSCRIBE TO THE OFFICIAL FINAL FANTASY VIII NEWSLETTER</h2>
+            <input type="email" name="email" id="email" placeholder="SIGN UP FOR FUTURE UPDATES" pattern=".+@example\.com" size="50" required >
+            <input id="submit" type="submit" form="form" value="Submit"></button>
+        </form>
+        <div class="footer">
+        <p>© 1999, 2021 SQUARE ENIX CO., LTD. All Rights Reserved.
+            CHARACTER DESIGN: TETSUYA NOMURA
+            LOGO ILLUSTRATION:© 1999 YOSHITAKA AMANO
+        </p>
+        </div>
+    </body>
+</html>

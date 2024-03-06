@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: rgb(244, 244, 220);
+}
+
+#starting-area {
+    position:absolute;
+    top: 0;
+}
+
+#navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 1000px;
+    margin: 0 20px auto 0;
+    padding: 60px 20px 0 25px;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    background-color: rgb(239, 239, 239);
+    font-size: 1.2rem;
+    border-right: 5px solid rgb(126, 126, 126);
+    border-left: 5px solid rgb(126, 126, 126);
+}
+
+#navbar > #fire {
+    max-width: 100px;
+    flex-direction: row;
+    margin-left: 25%;
+    margin-right: 20%;
+    margin-bottom: 30px;
+    font-size: 5rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: rgb(103, 103, 103);
+}
+
+
+.nav-link:hover {
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.main-section:not(#navbar) {
+    margin: 60px 30px 0 280px;
+}
+
+.separator {
+    margin: 60px 0 0 0;
+}
+
+#ullist {
+    margin: 10px 0 0 30px;
+}
+
+
+
+
+
+@media screen and (max-width: 600px){
+    #navbar {
+        width: 170px;
+        font-size: 0.9rem;
+    }
+
+    .main-section:not(#navbar) {
+        font-size: 0.95rem;
+        margin: 60px 15px 0 200px;
+    }
+}

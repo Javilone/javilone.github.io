@@ -1,0 +1,37 @@
+<!DOCTYPE>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles_surveyform.css">
+    </head>
+    <body>
+        <h1 id="title">Formulario de certificación</h1>
+        <p id="description">Rellena los campos para solicitar tu certficación.</p>
+        <form id="survey-form">
+            <label id="name-label">Nombre: <input id="name" type="text" placeholder="Introduce tu nombre" required/></label>
+            <label id="email-label">Email: <input id="email" type="email" placeholder="Introduce tu email" required/></label>
+            <label id="number-label">Introduce edad<input id="number" type="number" min=18 max=120 placeholder="Mínimo de 18 años"/></label>
+            <select id="dropdown">
+                <option>Selecciona curso</option>
+                <option>HTML</option>
+                <option>SQL</option>
+                <option>Python</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+            </select>
+        <legend class="radiobotones">Selecciona una opcion:</legend>
+            <div id="radios"><input type="radio" id="medio" name="radio" value="radio" checked/><label for="medio">Nivel Medio</label></div>
+            <div id="radios"><input type="radio" name="radio" id="avanzado" value="radio" /><label for="avanzado">Nivel Avanzado</label></div>
+        <legend class="opciones">Escoge entre las opciones</legend>
+            <label id="casillas"><input type="checkbox" value="Opcion-1"/> Quiero recibir el título en casa</label>
+            <label id="casillas"><input type="checkbox" value="Opcion-2"/> Solicito se me incluya en la bolsa de empleo</label>
+            <label id="casillas"><input type="checkbox" value="Opcion-3"/> Solicito mi regalo de fin de curso</label>
+            <label id="casillas"><input type="checkbox" value="Opcion-4"/> Solicito información de más cursos</label>
+            <label id="casillas"><input type="checkbox" value="Opcion-5"/> Solicito certificado de notas adjunto </label>
+            <label id="casillas"><input type="checkbox" value="Opcion-6"/> Solicito factura</label>
+            <textarea class="textarea" placeholder="Escribe aqui tus dudas o indicaciones"></textarea>
+            <input type="submit" id="submit" action="ad">Enviar formulario</button>
+
+        </form>
+    </body>
+</html>
