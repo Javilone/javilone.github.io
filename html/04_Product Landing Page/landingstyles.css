@@ -127,6 +127,7 @@ header > img {
     margin: 20px 0 0px 0;
     border-color: white;
     height: 40px;
+    padding-left: 10px;
 }
 
 #submit {
@@ -143,6 +144,7 @@ header > img {
     font-size: 0.7rem;
     text-align: center;
     margin-bottom: 40px;
+    padding: 0 5px 0 5px;
 }
 
 @media screen and (max-width: 600px){
@@ -180,5 +182,19 @@ header > img {
         size:30%;
         background-color: black;
         box-shadow: 0 0 20px 8px rgb(0, 0, 0);
+    }
+
+    #email {
+        color:white;
+        font-size: 1.2rem;
+        margin: 20px 0 0px 0;
+        border-color: white;
+        height: 40px;
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .footer {
+        padding: 0 5px 0 5px;
     }
 }
