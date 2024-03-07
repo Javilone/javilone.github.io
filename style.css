@@ -216,13 +216,47 @@ h3 {
     color: var(--resaltado-verde);
 }
 
+.contenedor-certificados {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 80px 0 0 5%;
+}
+
+.contenedor-certificados > div {
+    padding: 0 40px 0 0;
+}
+
+.contenedor-certificados > div > a{
+    text-decoration: none;
+    color: var(--verde-secundario);
+}
+
+.imagen-certificados {
+    width: 280px;
+    height: 200px;
+    border: 3px solid var(--verde-secundario);
+    border-radius: 10px;
+    transition: all 1s ease-out;
+}
+
+.imagen-certificados:hover {
+    width: 290px;
+    height: 210px;
+    border: 3px solid white;
+    box-shadow: 0 0 8px 5px white;
+    transition: all 1s ease-out;
+}
+
 /* PORTFOLIO */
 .contenedor-portfolio {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 80px;
+    margin: 80px 0 0 3%;
     width: 100%;
 }
 
@@ -236,16 +270,17 @@ h3 {
 }
 
 .imagen-portfolio {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border: 3px solid var(--verde-secundario);
     border-radius: 10px;
     transition: all 1s ease-out;
+    margin-left: 15px;
 }
 
 .imagen-portfolio:hover {
-    width: 320px;
-    height: 320px;
+    width: 260px;
+    height: 260px;
     border: 3px solid white;
     box-shadow: 0 0 8px 5px white;
     transition: all 1s ease-out;
@@ -259,7 +294,7 @@ h3 {
     font-size: 0.8em;
     margin: -1em 0 2.5em 0;
     max-width: 300px;
-    text-align: left;
+    text-align: left;;
 }
 
 #pie-de-foto > a {
@@ -410,15 +445,15 @@ h3 {
 /* AJUSTES PANTALLA MOVIL */
 @media screen and (max-width: 600px) {
     /* MENU HEADER */
-nav > ul {
-    font-size: 1.1rem;
-}
+    nav > ul {
+        font-size: 1.1rem;
+    }
     
     /* HEADER */
     .header{
         width: 90%;
         background-color: white;
-        top: -10px;
+        top: -5px;
         filter: opacity(100%);
     }
 
@@ -466,10 +501,31 @@ nav > ul {
         width: 100%;
         font-size: 0.9em;
     }
-    /* TRAYECTORIA */
+
+    .contenedor-certificados {
+        margin: 80px 0 0 12%;
+    }
+
+    /* PORTFOLIO */
     .contenedor-portfolio > div {
         padding: 0 0 0 0;
+        margin: 80px 0 0 0;
+        text-align: center;
     }
+
+    .trayectoria-left {
+        line-height: 1rem;
+    }
+    
+    .trayectoria-right {
+
+        line-height: 1rem;
+    }
+
+    .imagen-portfolio {
+        margin-left: -10px;
+    }
+
     /* CONTACTO */
     .contenedor-contacto {
         display: flex;
