@@ -498,7 +498,7 @@ h3 {
     }
 
     .contenedor-certificados {
-        margin: -40px 0 0px 14%;
+        margin: -40px 0 0px 11%;
     }
 
     .imagen-certificados {
@@ -508,7 +508,7 @@ h3 {
     /* PORTFOLIO */
 
     .contenedor-portfolio {
-        margin: 40px 0 0 0;
+        margin: 40px 0 0 2%;
     }
 
     .contenedor-portfolio > div {
