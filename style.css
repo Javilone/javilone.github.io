@@ -225,7 +225,7 @@ h3 {
 }
 
 .contenedor-certificados > div {
-    padding: 0 40px 0 0;
+    padding: 0 20px 0 20px;
 }
 
 .contenedor-certificados > div > a{
@@ -497,8 +497,8 @@ h3 {
         font-size: 0.9em;
     }
 
-    .contenedor-certificados {
-        margin: -40px 0 0px 11%;
+    .contenedor-certificados{
+        margin-top: -60px;
     }
 
     .imagen-certificados {
@@ -508,7 +508,7 @@ h3 {
     /* PORTFOLIO */
 
     .contenedor-portfolio {
-        margin: 40px 0 0 2%;
+        margin: 40px 0 0 0;
     }
 
     .contenedor-portfolio > div {
