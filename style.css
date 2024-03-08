@@ -185,7 +185,7 @@ h3 {
     box-sizing: border-box;
     text-align: right;
     padding-right: 20px;
-    line-height: 0.6rem;
+    line-height: 1.4rem;
 }
 
 .trayectoria-right {
@@ -194,7 +194,7 @@ h3 {
     text-align: left;
     align-self: center;
     box-sizing: border-box;
-    line-height: 0.6rem;
+    line-height: 1.4rem;
 }
 
 .trayectoria-left > p > a, .trayectoria-right > p > a {
@@ -222,7 +222,6 @@ h3 {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    margin: 20px 0 0 5%;
 }
 
 .contenedor-certificados > div {
@@ -419,7 +418,7 @@ h3 {
     align-items: flex-end;
     width: 80%;
     height: auto;
-    margin: -100px 10% 0 10%;
+    margin: 0px 10% 0 10%;
     border-radius: 10px 10px 0px 0px;
     background-color: white;
     color: black;
@@ -446,19 +445,18 @@ h3 {
 @media screen and (max-width: 600px) {
     /* MENU HEADER */
     nav > ul {
-        font-size: 1.1rem;
+        font-size: 0.95rem;
     }
     
     /* HEADER */
     .header{
         width: 90%;
         background-color: white;
-        top: -5px;
+        top: 0px;
         filter: opacity(100%);
     }
 
     #inicio {
-        margin: 0px 5% 0px 5%;
         box-shadow: 0 5px 8px 1px white;
     }
 
@@ -479,7 +477,7 @@ h3 {
     }
 
     h1 {
-        font-size: 2.0em;
+        font-size: 1.8em;
         margin-bottom: -0.8em;
         text-align: left;
     }
@@ -490,8 +488,8 @@ h3 {
         text-align: left;
     }
     #javifoto {
-        margin-top: 0; /* Elimina el margen superior en pantallas más pequeñas */
-        max-width: 60%; /* Asegura que la imagen no exceda el ancho del contenedor */
+        margin-top: 0;
+        max-width: 60%; 
     }
     /* CV */
     .contenedor-trayectoria {
@@ -503,23 +501,31 @@ h3 {
     }
 
     .contenedor-certificados {
-        margin: 80px 0 0 12%;
+        margin: -40px 0 0px 14%;
+    }
+
+    .imagen-certificados {
+        margin-top: 40px;
     }
 
     /* PORTFOLIO */
+
+    .contenedor-portfolio {
+        margin: 40px 0 0 0;
+    }
+
     .contenedor-portfolio > div {
         padding: 0 0 0 0;
-        margin: 80px 0 0 0;
+        margin: 40px 0 0 0;
         text-align: center;
     }
 
     .trayectoria-left {
-        line-height: 1rem;
+        line-height: 1.3rem;
     }
     
     .trayectoria-right {
-
-        line-height: 1rem;
+        line-height: 1.3rem;
     }
 
     .imagen-portfolio {
@@ -559,7 +565,7 @@ h3 {
     }
 
     #hablemos {
-        color: transparent;
+        visibility:hidden ;
     }
 
     #texto-a-copiar {
