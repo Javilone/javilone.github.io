@@ -334,9 +334,6 @@ h3 {
     text-decoration: none;
 }
 
-#hablemos {
-    margin: 0 -200px 0 0 ;
-}
 
 #texto-a-copiar #hablemos{
     margin: 0px 0px 0 0;
@@ -348,7 +345,7 @@ h3 {
     height: 55px;
     border: 2px solid white;
     border-radius: 50%;
-    margin: 0 15px 0 80px;
+    margin: 0 30px 0 80px;
     background-color: white;
     object-fit:scale-down;
     transition: 0.5s all ease-in;
@@ -543,7 +540,7 @@ h3 {
 
     .email-contacto {
         justify-content: center;
-        margin: -40px -20px 80px 0;
+        margin: -40px -50px 80px 0;
     }
 
     .email-simbolo {
@@ -561,11 +558,7 @@ h3 {
     .boton-email {
         width: 120px;
         height: 28px;
-        margin-left: 70px;
-    }
-
-    #hablemos {
-        visibility:hidden ;
+        margin-left: 60px;
     }
 
     #texto-a-copiar {
