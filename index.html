@@ -151,26 +151,25 @@
                     </div>
                     <div class="email-contacto">
                         <button class="boton-email" onclick="copiarEmail()">lopez.lara.javier@gmail.com</button>
-                        <script>
-                            function copiarEmail() {
-                            
-                            var texto = document.getElementById("texto-a-copiar");
-                            var areaDeTexto = document.createElement("textarea");
-
-                            areaDeTexto.value = texto.innerText;
-
-                            document.body.appendChild(areaDeTexto);
-
-                            areaDeTexto.select();
-                            
-                            document.execCommand('copy');
-
-                            document.body.removeChild(areaDeTexto);
-
-                            alert("¡Email copiado al portapapeles!");
-                            }
-                        </script>
                     </div>
+                    
+                    <script>
+                        function copiarEmail() {
+                            var email = "lopez.lara.javier@gmail.com"; 
+                            var areaDeTexto = document.createElement("textarea");
+                    
+                            areaDeTexto.value = email;
+                    
+                            document.body.appendChild(areaDeTexto);
+                    
+                            areaDeTexto.select();
+                            document.execCommand('copy');
+                    
+                            document.body.removeChild(areaDeTexto);
+                    
+                            alert("¡Email copiado al portapapeles!");
+                        }
+                    </script>
                 </div>
             <hr class="separador content" id="sobremi" role="region" aria-labelledby="sobremi"></hr>
             <section> <!-- SOBRE MI -->
