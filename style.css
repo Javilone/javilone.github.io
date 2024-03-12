@@ -225,7 +225,7 @@ h3 {
 }
 
 .contenedor-certificados > div {
-    padding: 0 20px 0 20px;
+    padding: 0 0px 0 20px;
 }
 
 .contenedor-certificados > div > a{
@@ -309,19 +309,19 @@ h3 {
 .contenedor-contacto {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
-    margin: 80px 80px 0 0;
-    width: 100%;
+    align-items: center;
+    width: 80%;
+    margin: 80px auto;
 }
 
 .email-contacto {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 90px 80px 50px;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0 auto; 
+    max-width: 80%; 
 }
 
 .email-contacto > a {
@@ -334,38 +334,30 @@ h3 {
     text-decoration: none;
 }
 
-
-#texto-a-copiar #hablemos{
-    margin: 0px 0px 0 0;
-    font-size: 1.2em;
-}
-
 .email-simbolo {
     width: 55px;
     height: 55px;
     border: 2px solid white;
     border-radius: 50%;
-    margin: 0 30px 0 80px;
+    margin-bottom: 40px;
     background-color: white;
     object-fit:scale-down;
     transition: 0.5s all ease-in;
 }
 
 .email-simbolo:hover {
-    border: 2px solid var(--verde-secundario);
+    border: 3px solid var(--verde-secundario);
     border-radius: 50%;
-    margin: 0 15px 0 80px;
-    width: 66px;
-    height: 66px;
+    width: 60px;
+    height: 60px;
     transition: 0.5s all ease-out;
-    
 }
 
 .boton-email {
     border-radius: 10px;
     border: 3px solid var(--resaltado-verde);
     background-color: var(--header-background);
-    width: 140px;
+    width: auto;
     height: 35px;
     margin: 0 15px 0 0;
     transition: 0.5s all ease-in;
@@ -374,8 +366,8 @@ h3 {
 .boton-email:hover {
     background-color: #2ca047;
     cursor: pointer;
-    width: 152px;
-    height: 40px;
+    width: auto;
+    height: 45px;
     transition: 0.5s all ease-out;
 }
 
@@ -531,38 +523,18 @@ h3 {
 
     /* CONTACTO */
     .contenedor-contacto {
-        display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 80%;
-    }
-
-    .email-contacto {
-        justify-content: center;
-        margin: -40px -50px 80px 0;
+        width: 60%;
+        margin: 80px auto;
     }
 
     .email-simbolo {
-        width: 50px;
-        height: 50px;
-        margin-left: 70px;
-    }
-
-    .email-simbolo:hover{
-        width: 50px;
-        height: 50px;
-        margin-left: 70px;
-    }
-
-    .boton-email {
-        width: 120px;
-        height: 28px;
-        margin-left: 60px;
-    }
-
-    #texto-a-copiar {
-        margin-left: 60px;
+        width: 45px;
+        height: 45px;
+        border: 2px solid white;
+        border-radius: 50%;
+        background-color: white;
+        object-fit:scale-down;
     }
 
     /* SOBRE MI */
