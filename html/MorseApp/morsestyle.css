@@ -1,9 +1,10 @@
 :root {
-    --backgroundColor: #F5F7F8;
+    --colorWeight0: rgb(117, 181, 196);
     --colorWeight3: #76ABAE;
     --colorWeight2: #31363F;
-    --colorWeight1: #EEEEEE;
+    --colorWeight1: #F5F7F8;
     /* https://colorhunt.co/palette/430a5d5f374b8c6a5deee4b1 */
+    background-image: linear-gradient(to bottom right, #56565a, #1E1B32);
 }
 
 * {
@@ -11,7 +12,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--backgroundColor);
+    /*background-color: var(--backgroundColor);*/
     color: var(--colorWeight2);
 }
 
@@ -24,26 +25,24 @@
     width: 70%; 
     margin: 1% auto;
     text-align: center;
-    border: 2px solid var(--colorWeight2);
-    box-shadow: 2px 2px 5px 2px var(--colorWeight2);
-    border-radius: 20px;
-    background-color: transparent;
+    border: none;
 }
 
 .head-h1 {
     font-size: 4rem;
-    background-color: transparent;
+    color: var(--colorWeight0);
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .betaSpan{
     font-size: 0.9rem;
-    background-color: transparent;
+    color: white;
 }
 
 .head-p {
     font-weight: bold;
-    background-color: transparent;
     padding-bottom: 12px;
+    color: white;
 }
 
 /* <main> </main> */
@@ -55,10 +54,16 @@
     margin: 0 auto;
     max-width: 70%;
     height: 600px;
-    background-color: var(--colorWeight3);
+    background-color: rgba(68, 154, 173, 0.2);
     border-radius: 30px;
     border: 2px solid var(--colorWeight2);
     box-shadow: 2px 2px 5px 2px var(--colorWeight2);
+    transition: 1s all ease-out;
+}
+
+.main-container:hover {
+    background-color: rgba(68, 154, 173, 0.7);
+    transition: 1s all ease-in;
 }
 
 .to-morse{
@@ -70,6 +75,13 @@
     background-color: var(--colorWeight2);
     border-radius: 20px;
     padding: 2% 2%;
+    transition: 1s all ease-out;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.to-morse:hover {
+    transition: 1s all ease-in;
+    border: 4px solid var(--colorWeight1);
 }
 
 .to-text {
@@ -81,6 +93,13 @@
     background-color: var(--colorWeight2);
     border-radius: 20px;
     padding: 2% 2%;
+    transition: 1s all ease-out;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.to-text:hover{
+    transition: 1s all ease-in;
+    border: 4px solid var(--colorWeight1);
 }
 
 form {
@@ -216,20 +235,19 @@ form {
 /* AJUSTES PANTALLA MOVIL */
 @media screen and (max-width:900px) {
 
-    * {
-        background-color: var(--colorWeight3);
+    :root {
+        background-image: linear-gradient(to bottom right, #56565a, #1E1B32);
     }
 
     .head{
         font-size: 0.9rem;
         margin: 10% auto;
-        background-color: var(--colorWeight1);
         width: 90%;
     }
 
     .head-h1 {
         font-size: 2.5rem;
-        color: var(--colorWeight2);
+        color: var(--colorWeight0);
     }
 
     .head-p {
