@@ -222,14 +222,13 @@ form {
     max-width: 70%;
     height: auto;
     border: none;
-    background-color: transparent;
 }
 
 .p-footer {
-    background-color: transparent;
     text-align: center;
     font-weight: bold;
     padding: 1%;
+    color: var(--colorWeight1);
 }
 
 /* AJUSTES PANTALLA MOVIL */
