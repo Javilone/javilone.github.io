@@ -22,7 +22,7 @@ function checkInput() {
     const number = parseInt(userInput.value);
 
     if (isNaN(number)) {
-        output.style.display = 'block'; 
+        output.style.display = 'block';
         output.textContent = "Please enter a valid number";
         return
     }
@@ -36,8 +36,7 @@ function checkInput() {
         output.textContent = "Please enter a number less than or equal to 3999";
         return
     }
-
-    convertToRoman(number)
+    else { return convertToRoman(number) }
 }
 
 function convertToRoman(number) {
@@ -48,7 +47,8 @@ function convertToRoman(number) {
             number -= romanNumerals[i].value;
         }
     }
-    return output.textContent = result;
+    output.style.display = 'block';
+    output.textContent = result;
 }
 
 convertBtn.addEventListener('click', checkInput);
