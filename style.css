@@ -275,7 +275,6 @@ h3 {
     border-radius: 10px;
     transition: all 1.5s ease-out;
     margin-left: 15px;
-
 }
 
 .imagen-portfolio:hover, .imagen-portfolio:active {
@@ -537,6 +536,14 @@ h3 {
         margin-left: -10px;
     }
 
+    .txt-desplegable {
+        height:fit-content;
+    }
+
+    .txt-desplegable:hover, .txt-desplegable:active  {   
+        height:fit-content;
+    }
+    
     /* CONTACTO */
     .contenedor-contacto {
         flex-direction: column;
