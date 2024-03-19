@@ -446,7 +446,7 @@ h3 {
 
 
 /* AJUSTES PANTALLA MOVIL */
-@media screen and (max-width:750px) {
+@media screen and (max-width:650px) {
     /* MENU HEADER */
     nav > ul {
         font-size: 0.95rem;
