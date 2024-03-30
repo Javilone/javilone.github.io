@@ -208,7 +208,15 @@ h3 {
     margin: 15px 0 20px 0;
     width: 100%;
     text-decoration: none;
+    animation-name: enlaceCvPDF;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
 
+@keyframes enlaceCvPDF {
+    0% {color: white;}
+    50% {color: var(--resaltado-verde);}
+    100% {color: white;}
 }
 
 .enlaceCV:hover {
